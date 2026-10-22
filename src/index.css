@@ -1,0 +1,24 @@
+@import "tailwindcss";
+
+/* Leaflet map styles */
+.leaflet-container {
+  font-family: inherit;
+  z-index: 10;
+}
+
+.custom-map-marker {
+  background: transparent;
+  border: none;
+}
+
+/* Print voucher optimization */
+@media print {
+  header, footer, nav, button {
+    display: none !important;
+  }
+  body {
+    background: white !important;
+    color: black !important;
+  }
+}
+
